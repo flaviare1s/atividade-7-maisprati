@@ -1,4 +1,4 @@
-package exercicio1;
+package exercicios_1_e_2;
 
 public class Main {
     public static void main(String[] args) {
@@ -12,6 +12,11 @@ public class Main {
         System.out.println(produto1.getNome() + " - " + produto1.getPreco() + " - " + produto1.getQuantidadeEmEstoque());
         System.out.println(produto2.getNome() + " - " + produto2.getPreco() + " - " + produto2.getQuantidadeEmEstoque());
         System.out.println(produto3.getNome() + " - " + produto3.getPreco() + " - " + produto3.getQuantidadeEmEstoque());
+
+        produto1.aplicarDesconto(10);
+        System.out.println("Celular com desconto: " + produto1.getPreco());
+
+        produto2.aplicarDesconto(60);
 
         produto2.setQuantidadeEmEstoque(-1);
         System.out.println(produto2.getQuantidadeEmEstoque());

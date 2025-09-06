@@ -1,4 +1,4 @@
-package exercicio1;
+package exercicios_1_e_2;
 
 public class Produto {
     private String nome;
@@ -42,5 +42,14 @@ public class Produto {
             throw new IllegalArgumentException("Quantidade em estoque não pode ser negativa");
         }
         this.quantidadeEmEstoque = quantidadeEmEstoque;
+    }
+
+    public void aplicarDesconto(double porcentagem) {
+        if (porcentagem < 0 || porcentagem > 50) {
+            throw new IllegalArgumentException(("Valor de porcentagem fora do limite permitido"));
+        } else {
+            porcentagem = porcentagem / 100;
+            setPreco(preco - (preco * porcentagem));
+        }
     }
 }
