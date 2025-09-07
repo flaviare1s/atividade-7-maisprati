@@ -48,7 +48,8 @@ específicas (ex.: PagamentoInvalidoException).
 - Crie o objeto de valor imutável Dinheiro (valor BigDecimal e enum Moeda) com
 equals/hashCode coerentes.
 - Modele Produto, ItemCarrinho e um Carrinho cuja
-lista de itens seja imutável: operações de adicionar/remover/aplicar cupom retornam um novo carrinho. Valide quantidades > 0, proíba valores negativos e limite cupons
+lista de itens seja imutável: operações de adicionar/remover/aplicar cupom retornam um novo carrinho.
+- Valide quantidades > 0, proíba valores negativos e limite cupons
 a 30% com arredondamento bancário.
 - Demonstre o fluxo completo em testes.
 
@@ -65,7 +66,7 @@ inexistente.
 - Modele CalculadoraFrete com calcular(Pedido): BigDecimal.
 - Crie estratégias
 Sedex, Pac e RetiradaNaLoja e permita injeção/troca da estratégia no Pedido.
-Acrescente uma estratégia promocional via lambda (frete grátis acima de X).
+- Acrescente uma estratégia promocional via lambda (frete grátis acima de X).
 - Valide
 CEP/região e dispare exceções para CEP inválido. Mostre a troca de estratégia em
 tempo de execução.
